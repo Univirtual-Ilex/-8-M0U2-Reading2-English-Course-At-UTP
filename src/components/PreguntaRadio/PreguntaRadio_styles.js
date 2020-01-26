@@ -11,7 +11,8 @@ label{
     position: relative;
 
     input {
-        opacity:0
+        opacity:0;
+        position: absolute;
     }
     .mark::before{
         content: '';

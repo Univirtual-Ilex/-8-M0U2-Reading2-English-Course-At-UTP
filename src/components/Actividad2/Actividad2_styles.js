@@ -23,7 +23,7 @@ const styles = css`
         align-items:stretch;
         align-content:space-between;
         flex-wrap:wrap;
-        height:25.5em;
+        height:25.4em;
         li{
             margin: 0.5em 0.5em;
             width: 10em ;
