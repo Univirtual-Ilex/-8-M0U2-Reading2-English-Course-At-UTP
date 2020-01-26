@@ -51,7 +51,7 @@ const App = () => {
     <>
       <Gstyle/>
       <Fondo degradado={Ilex.degradado('-30deg',Ilex.color_verde_reading,Ilex.color_verde_reading,Ilex.color_azul_reading)}>
-        <Actividad1 />
+        <Actividad2 />
       </Fondo>
       <Modal w='30'>
       </Modal>
