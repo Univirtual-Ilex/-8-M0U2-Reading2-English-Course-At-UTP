@@ -48,8 +48,11 @@ const Actividad_base =  ({...props}) => {
                     I am happy with my English course but I hope to study veterinary or medicine. I need to decide which program.
                     I hope you are doing well in Canada with your wife and children. Send my regards to them, please. By the way, our mother is better now after the surgery.
                     See you next month.
-                    Love,
-                    Jennifer
+
+                    <span className="label">
+                    <br/><br/>Love, Jennifer
+                    </span>
+
 
                     </div>
                 </div>
