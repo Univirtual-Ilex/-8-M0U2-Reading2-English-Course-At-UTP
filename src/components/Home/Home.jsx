@@ -1,12 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 import Container from '../Container'
-import ButtonX from '../ButtonX'
+import {ButtonLink} from '../ButtonX'
 import estilos_home from './Home_styles'
 
 
 
-const Home_base = function ({...props}) { // se le pasan las props para recibir los styled components
+const Home_base = function ({staticContext, ...props}) { // se le pasan las props para recibir los styled components
 
     return (
         <Container {...props}  row bgImage="src/bg.png">
@@ -17,7 +17,7 @@ const Home_base = function ({...props}) { // se le pasan las props para recibir 
                             <p>
                             Read the next email and answer the comprehension questions and choose A, B, C or D.
                             <span className='negrilla'> <br/> ¡Time to practice your listening skill!</span></p>
-                            <ButtonX>Start</ButtonX>
+                            <ButtonLink to='/actividad1'>Start</ButtonLink>
                         </div>
                     </div>
                     <div className='bloque-derecho'>

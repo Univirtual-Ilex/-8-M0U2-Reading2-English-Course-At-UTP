@@ -14,10 +14,36 @@ import { IRow, ICol } from '../Grid'
 import ButtonUi from '../ButtonControlUI'
 import ButtonCheck from '../ButtonCheck'
 import PreguntaRadio from '../PreguntaRadio/PreguntaRadio'
+import { useState } from 'react'
+import Modal from '../Generales/Modal'
+import PreguntaResultado from '../PreguntaResultado'
 // Componente base
-const Actividad2_base = ({...props}) => {
+const Actividad2_base = ({staticContext, ...props}) => {
+    const [answers, setAnswers ] = useState([])
+    const [results, setResults] = useState(false)
+    const [visible, setVisible] = useState(false)
+
+    const sendFeedback = (feedback, id) => {
+        let collection = [...answers]
+        collection[id-1] = feedback
+        setAnswers(collection)
+        console.log(answers)
+    }
+
+    const check = (feedback) => {
+        let result = feedback.indexOf(false)
+        let result2 = feedback.indexOf()
+        if (result === -1 && result2 === -1 && feedback.length === data.length) {
+            setVisible(true)
+            setResults(true)
+        } else {
+            setVisible(true)
+            setResults(false)
+        }
+    }
+
     return (
-        <Container bgImage='./src/bg_actividad1.png' h={33} {...props}>
+        <Container bgImage='./src/bg_actividad1.png' h={35} {...props}>
 
             <UiButtonsContainer>
                 <ButtonUi icon='ilx-ayuda' tooltip='After reading, answer which of the following answers to the questions is correct' />
@@ -44,6 +70,8 @@ const Actividad2_base = ({...props}) => {
                                     pregunta={pregunta.pregunta}
                                     opciones={pregunta.respuestas}
                                     correcta= {pregunta.correcta}
+                                    indexpregunta={pregunta.id}
+                                    send={(evaluation, questionNumber) => sendFeedback(evaluation, questionNumber) }
                                     />
                                     </li>
                                 )
@@ -56,9 +84,22 @@ const Actividad2_base = ({...props}) => {
                 </IRow>
 
                 <IRow>
-                    <ICol pt={1}><ButtonCheck /></ICol>
+                    <ICol pt={3}><ButtonCheck onClick={() => check(answers)} /></ICol>
                 </IRow>
             </IRow>
+
+            <Modal visible={visible} ok={results} err={!results} w={30} nxtUrl='/' repeatUrl='/actividad2' finishUrl={results}>
+                {
+
+                answers.map((value, index) => {
+                    return(
+                    <PreguntaResultado key={'id'+index} ok={value} err={!value} > {index+1} </PreguntaResultado>
+                    )
+                })
+                
+                }
+            
+            </Modal>
 
 
 

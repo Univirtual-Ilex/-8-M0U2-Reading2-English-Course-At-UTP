@@ -16,7 +16,7 @@ const style = css`
     left:0;
     right:0;
     bottom:0%;
-    z-index:1000;
+    z-index:10000;
     display: ${props => props.visible ? 'flex' : 'none' };
     justify-content:center;
     align-items:center;

@@ -2,10 +2,10 @@
 //Import
 import React from 'react'
 import styled from 'styled-components'
-import styles from './ButtonModal_styles'
+import styles,{stylesa} from './ButtonModal_styles'
 
 // Componente base
-const ButtonModal_base = ({ inactivo , children, ...props}) => {
+const ButtonModal_base = ({ disabled, inactivo , children, ...props}) => {
     const isActive = () => {
         if (inactivo){
             return 'inactivo'
@@ -23,4 +23,7 @@ const ButtonModal_base = ({ inactivo , children, ...props}) => {
     )
 }
 const ButtonModal = styled(ButtonModal_base)`${ styles }`
+export const ButtonmodalTo= styled.a`
+    ${stylesa}
+`
 export default ButtonModal

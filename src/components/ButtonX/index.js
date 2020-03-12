@@ -1,1 +1,1 @@
-export {default} from './ButtonX'
+export {default, ButtonLink} from './ButtonX'

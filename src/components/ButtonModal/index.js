@@ -1,1 +1,1 @@
-export { default } from './ButtonModal'
+export { default, ButtonmodalTo } from './ButtonModal'

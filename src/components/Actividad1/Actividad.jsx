@@ -16,7 +16,7 @@ import ButtonCheck from '../ButtonCheck'
 
 
 
-const Actividad_base =  ({...props}) => {
+const Actividad_base =  ({staticContext, ...props}) => {
     return (
         <Container bgImage='./src/bg_actividad1.png' {...props} h={32}>
             
@@ -59,7 +59,9 @@ const Actividad_base =  ({...props}) => {
             </IRow>
             <IRow>
                 <ICol >
-                    <ButtonCheck>Next</ButtonCheck>
+                    <a href="/actividad2">
+                        <ButtonCheck>Next</ButtonCheck>
+                    </a>
                 </ICol>
             </IRow>
 
