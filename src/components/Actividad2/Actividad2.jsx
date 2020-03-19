@@ -46,7 +46,7 @@ const Actividad2_base = ({staticContext, ...props}) => {
         <Container bgImage='./src/bg_actividad1.png' h={35} {...props}>
 
             <UiButtonsContainer>
-                <ButtonUi icon='ilx-ayuda' tooltip='After reading, answer which of the following answers to the questions is correct' />
+                <ButtonUi icon='ilx-ayuda' tooltip='Read the next email and answer the comprehension questions and choose A, B, C or D.' />
                 <ButtonUi icon='ilx-volver' tooltip='Start Again' />
             </UiButtonsContainer>
             <IRow pt={2}>

@@ -8,7 +8,7 @@ const data = [
             "Jennifer's mother",
             "Not mentioned"
         ],
-        correcta:1 
+        correcta:2 
     },
     {
         id:2,
@@ -19,7 +19,7 @@ const data = [
             "Veterinary",
             "Bachelor’s degree in Spanish"
         ],
-        correcta:1  
+        correcta:2 
     },
     {
         id:3,
@@ -30,7 +30,7 @@ const data = [
            "Jennifer’s brother.",
            "Jennifer’s father."
         ],
-        correcta:1  
+        correcta:3  
     },
     {
         id:4,
@@ -52,7 +52,7 @@ const data = [
             "Visit her brother.",
             "Call her brother."
         ],
-        correcta:1 
+        correcta:2 
     },
     {
         id:6,
@@ -63,7 +63,7 @@ const data = [
             "Intelligent and fun",
             "Intelligent but lazy"
         ],
-        correcta:1 
+        correcta:3
     },
     {
         id:7,
@@ -85,7 +85,7 @@ const data = [
             "A wife and some children." ,
             "A cat and a dog"
         ],
-        correcta:2
+        correcta:3
     },
     {
         id:9,
@@ -107,7 +107,7 @@ const data = [
             "July",
             "January"
         ],
-        correcta:2
+        correcta:3
     },
 ]
 
