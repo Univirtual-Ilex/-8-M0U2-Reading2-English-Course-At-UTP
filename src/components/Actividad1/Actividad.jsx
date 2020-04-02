@@ -22,7 +22,7 @@ const Actividad_base =  ({staticContext, ...props}) => {
             
             <UiButtonsContainer>
                 <ButtonUi icon='ilx-ayuda' tooltip='Read the next email and answer the comprehension questions and choose A, B, C or D.' />
-                <ButtonUi icon='ilx-volver' tooltip='Start Again' />
+                <ButtonUi icon='ilx-volver' tooltip='Start Again' onClick={() => window.location.reload()} />
             </UiButtonsContainer>
             <IRow pt={1.5}>
                 <ICol py={ 0.5 }>
@@ -59,7 +59,7 @@ const Actividad_base =  ({staticContext, ...props}) => {
             </IRow>
             <IRow>
                 <ICol >
-                    <a href="/actividad2">
+                    <a href="#/actividad2">
                         <ButtonCheck>Next</ButtonCheck>
                     </a>
                 </ICol>

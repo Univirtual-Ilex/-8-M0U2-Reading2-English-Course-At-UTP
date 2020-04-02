@@ -47,7 +47,7 @@ const Actividad2_base = ({staticContext, ...props}) => {
 
             <UiButtonsContainer>
                 <ButtonUi icon='ilx-ayuda' tooltip='Read the next email and answer the comprehension questions and choose A, B, C or D.' />
-                <ButtonUi icon='ilx-volver' tooltip='Start Again' />
+                <ButtonUi icon='ilx-volver' tooltip='Start Again' onClick={() => window.location.reload()} />
             </UiButtonsContainer>
             <IRow pt={2}>
                 <ICol pt={ 2 } pb={0.5}>
@@ -88,7 +88,7 @@ const Actividad2_base = ({staticContext, ...props}) => {
                 </IRow>
             </IRow>
 
-            <Modal visible={visible} ok={results} err={!results} w={30} nxtUrl='/' repeatUrl='/actividad2' finishUrl={results}>
+            <Modal visible={visible} ok={results} err={!results} w={30} nxtUrl='#/' repeatUrl='#/actividad2' finishUrl={results}>
                 {
 
                 answers.map((value, index) => {
