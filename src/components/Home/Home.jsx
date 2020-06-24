@@ -13,10 +13,10 @@ const Home_base = function ({staticContext, ...props}) { // se le pasan las prop
 
                     <div className='bloque-izquierdo entrada-top-Y-2'>
                         <div className='bloque-izquierdo-container'>
-                            <h1> My English Course at UTP </h1>
+                            <h1> My English Course at the UTP </h1>
                             <p>
                             Read the next email and answer the comprehension questions and choose A, B, C or D.
-                            <span className='negrilla'> <br/> ¡Time to practice your listening skill!</span></p>
+                            <span className='negrilla'> <br/> Time to practice your listening skill!</span></p>
                             <ButtonLink to='/actividad1'>Start</ButtonLink>
                         </div>
                     </div>
